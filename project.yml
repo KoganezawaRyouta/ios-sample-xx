@@ -1,0 +1,41 @@
+name: ios-sample-xx
+targets:
+  ios-sample-xx:
+    type: application
+    platform: iOS
+    deploymentTarget:
+      iOS: "12.4"
+    sources: [ios-sample-xx]
+    # configFiles:
+    #   Debug: configs/Debug.xcconfig
+    #   Release: configs/Release.xcconfig
+    settings:
+      base:
+        CURRENT_PROJECT_VERSION: 1
+        SWIFT_VERSION: 5.0
+        PRODUCT_BUNDLE_IDENTIFIER: com.koganezawa.ios-sample-xx
+        DEVELOPMENT_TEAM: H64788U4QJ
+    dependencies:
+      - carthage: RxSwift
+    # scheme:
+    #   testTargets:
+    #     - ios-sampleTests
+    #     - ios-sampleUITests
+  # ios-sampleTests:
+  #   type: bundle.unit-test
+  #   platform: iOS
+  #   sources: ios-sampleTests
+  #   configFiles:
+  #     Debug: configs/xxxxx.xcconfig
+  #     Release: configs/xxxxx.xcconfig
+  #   dependencies:
+  #     - target: ios-sample-xx
+  # ios-sampleUITests:
+  #   type: bundle.ui-testing
+  #   platform: iOS
+  #   sources: ios-sampleUITests
+  #   configFiles:
+  #     Debug: configs/xxxxx.xcconfig
+  #     Release: configs/xxxxx.xcconfig
+  #   dependencies:
+  #     - target: ios-sample-xx
