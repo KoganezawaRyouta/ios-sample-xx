@@ -1,7 +1,8 @@
-dep:
+dev-depends:
 	brew install xcodegen
 	brew install cocoapods
 	brew install carthage
+	brew cask install swimat
 
 init:
 	pod setup
